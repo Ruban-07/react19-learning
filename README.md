@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# React - A Javascript Library🔥
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+One of the most professional and powerfull language
 
-Currently, two official plugins are available:
+## Disclaimer ⚠️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Don't get into react, without having basic knowledge in `Javascript`**
 
-## React Compiler
+The `Javascript` the one only language which browser can understand. All other languages we're using won't rendered without the help of `Javascript`. And we must known the `ES6` syntaxes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React is the number one most popular language in the world.
 
-## Expanding the ESLint configuration
+React is the Backbone of key stacks like:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- M E R N - `M`ongoDB | `E`xpress.js | `R`eact | `N`ode.js
+- P E R N - `P`ostgreSQL | `E`xpress.js | `R`eact | `N`ode.js
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+We can do mobile applications, using `React Native` and also we can integrate it in `NextJs` for full stack web application.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Virtual DOM🍁
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The `Virtual DOM` is the simlified map of our web page. When something changes, react create new `Virtual DOM` Element. Then it only update the changed part alone to speedup the application.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+It's like to change a single tile color in wall, instead of re-coloring the complete wall.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Node.js🛠️
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+`Node.js` is the `Javascript` runtime, to run the `Javascript` outside the browser. `React` has the dependency of `Node.js`, so before setup `React`, we must setup `Node.js` to our machine.
+
+While installing `Node.js`, you'll get an handy tool called `npm` - Node Package Manager.
+
+Instead of writing everything from scratch, you can add package using `npm` for animations, forms and etc. And also it'll keep your tools and codes up-to-date.
+
+## Code Editor🖊️
+
+There are many code editors, but I'll prefer the modern and light weight code editor, which is `VS Code` - Visual Studio Code.
+
+## Git 💫
+
+I prefer personally to must gain knowledge in `git`, whatever languages you work, that's not a matter, but the `Version Control System` is the most important thing to track your code.
+
+## Create React Application🆕
+
+Creating a New React App can be done in multiple ways, and the legacy way is `create react app`.
+
+But currently there is an modern build tool called `Vite`, which is an Building tool for `React`. By using that we can create our react application very easily. The below command will help to create react app using `Vite`:<br/>
+
+`npm create vite@latest`
