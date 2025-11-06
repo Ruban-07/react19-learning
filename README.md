@@ -105,3 +105,49 @@ This is the place where our `React` component and you `Javascript` logics are th
 ## Assets🗄️
 
 In this assets folder, we'll keep all our media files like image, videos and more.
+
+## Components⚛️
+
+There two ways to define a `Component` in `React`:
+
+- Class Component
+- Functional Component
+
+## Class Component
+
+This is the treditional way to define the component.
+
+```javascript
+class ClassComponent extends React.Compoent {
+  render() {
+    return <h2>Class Component</h2>;
+  }
+}
+```
+
+This method is outdated, there is a better way, the `functional component` is better than this.
+
+## Functional Component
+
+```javascript
+function App() {}
+export default App;
+```
+
+There is an modern method `Arrow Components`, which is the way widely used.
+
+> Arrow Components
+
+```javascript
+const App = () => {
+  return <h2>Functional Arrow Component</h2>;
+};
+
+export default App;
+```
+
+This `Arrow Components` method is preferable.
+
+The Beauty of `React Component` is use create as many use like.
+
+If you create a component, use can use it `n` times you want. This will be reusable.
