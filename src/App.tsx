@@ -1,9 +1,13 @@
 import "./App.css";
 
-const Card = () => {
+interface CardProps {
+  title: string;
+}
+
+const Card = ({ title }: CardProps) => {
   return (
     <div>
-      <p>Card Component</p>
+      <p>{title}</p>
     </div>
   );
 };
@@ -12,9 +16,9 @@ const App = () => {
   return (
     <div>
       <h2>Components</h2>
-      <Card />
-      <Card />
-      <Card />
+      <Card title="Pen" />
+      <Card title="Pencil" />
+      <Card title="Eraser" />
     </div>
   );
 };
