@@ -151,3 +151,10 @@ This `Arrow Components` method is preferable.
 The Beauty of `React Component` is use create as many use like.
 
 If you create a component, use can use it `n` times you want. This will be reusable.
+
+## Props
+
+In `React` the `props` is shortend of `Properties`. This `props` is mainly used to pass data from one component to another. Typically we pass data from parent component to child component.
+
+The `props` is like an argument that we pass to the function.
+
