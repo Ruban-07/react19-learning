@@ -158,3 +158,18 @@ In `React` the `props` is shortend of `Properties`. This `props` is mainly used 
 
 The `props` is like an argument that we pass to the function.
 
+## Styling
+
+We can give stylings through:
+
+1. Inline Style
+2. CSS
+3. Tailwind CSS
+4. Bootstrap
+5. Material UI
+6. Ant UI
+7. SASS
+8. CSS in JS
+9. CSS Module we name it
+
+we can choose these any approach to style our ui. 
