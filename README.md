@@ -113,7 +113,7 @@ There two ways to define a `Component` in `React`:
 - Class Component
 - Functional Component
 
-## Class Component
+## Class Component🏫
 
 This is the treditional way to define the component.
 
@@ -127,7 +127,7 @@ class ClassComponent extends React.Compoent {
 
 This method is outdated, there is a better way, the `functional component` is better than this.
 
-## Functional Component
+## Functional Component🚀
 
 ```javascript
 function App() {}
@@ -152,13 +152,13 @@ The Beauty of `React Component` is use create as many use like.
 
 If you create a component, use can use it `n` times you want. This will be reusable.
 
-## Props
+## Props🚘
 
 In `React` the `props` is shortend of `Properties`. This `props` is mainly used to pass data from one component to another. Typically we pass data from parent component to child component.
 
 The `props` is like an argument that we pass to the function.
 
-## Styling
+## Styling💇
 
 We can give stylings through:
 
@@ -172,4 +172,12 @@ We can give stylings through:
 8. CSS in JS
 9. CSS Module we name it
 
-we can choose these any approach to style our ui. 
+we can choose these any approach to style our ui.
+
+## States 🛣️
+
+The `state` is the brain of the `React Component`, it holds the information about the components that can change over time.
+
+## Hooks 🪝
+
+The `Hooks` are special functions in `React` that let you tap into the react features

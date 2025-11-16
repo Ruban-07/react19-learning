@@ -1,13 +1,29 @@
-import "./App.css";
+import { useEffect, useState } from "react";
 
-interface CardProps {
+import "./App.css";
+import { Button } from "./components/ui/button";
+
+type CardProps = {
   title: string;
-}
+};
 
 const Card = ({ title }: CardProps) => {
+  const [hasLiked, setHasLiked] = useState<boolean>(false);
+  const [count, setCount] = useState<number>(0);
+  useEffect(() => {
+    console.log(`${title} has been liked: ${hasLiked}`);
+  }, [hasLiked]);
+
   return (
-    <div>
-      <p>{title}</p>
+    <div onClick={() => setCount(count + 1)}>
+      <p>
+        {title}
+        <br />
+        {count}
+      </p>
+      <Button onClick={() => setHasLiked(!hasLiked)}>
+        {hasLiked ? "❤️" : "🤍"}
+      </Button>
     </div>
   );
 };
