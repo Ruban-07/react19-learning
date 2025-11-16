@@ -1,40 +1,17 @@
 import { useEffect, useState } from "react";
 
-import "./App.css";
-import { Button } from "./components/ui/button";
-
-type CardProps = {
-  title: string;
-};
-
-const Card = ({ title }: CardProps) => {
-  const [hasLiked, setHasLiked] = useState<boolean>(false);
-  const [count, setCount] = useState<number>(0);
-  useEffect(() => {
-    console.log(`${title} has been liked: ${hasLiked}`);
-  }, [hasLiked]);
-
-  return (
-    <div onClick={() => setCount(count + 1)}>
-      <p>
-        {title}
-        <br />
-        {count}
-      </p>
-      <Button onClick={() => setHasLiked(!hasLiked)}>
-        {hasLiked ? "❤️" : "🤍"}
-      </Button>
-    </div>
-  );
-};
-
 const App = () => {
+  const [count, setCount] = useState<number>(
+    parseInt(localStorage.getItem("count") ?? "0") || 0
+  );
+  const handleCounter = () => setCount((count) => count + 1);
+  useEffect(() => {
+    localStorage.setItem("count", String(count));
+  }, [count]);
   return (
     <div>
-      <h2>Components</h2>
-      <Card title="Pen" />
-      <Card title="Pencil" />
-      <Card title="Eraser" />
+      <h1>COUNT :{count} </h1>
+      <button onClick={handleCounter}>ADD</button>
     </div>
   );
 };
