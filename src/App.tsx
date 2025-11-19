@@ -1,17 +1,32 @@
-import { useEffect, useState } from "react";
+import { useReducer } from "react";
+
+type CountData = "increment" | "decrement" | "double";
+
+type CountAction = { type: CountData };
+
+type CountState = {
+  count: number;
+};
+
+const reducer = (state: CountState, action: CountAction) => {
+  switch (action.type) {
+    case "increment":
+      return { count: state.count + 1 };
+    case "decrement":
+      return { count: state.count + 1 };
+    case "double":
+      return { count: state.count * 2 };
+  }
+};
 
 const App = () => {
-  const [count, setCount] = useState<number>(
-    parseInt(localStorage.getItem("count") ?? "0") || 0
-  );
-  const handleCounter = () => setCount((count) => count + 1);
-  useEffect(() => {
-    localStorage.setItem("count", String(count));
-  }, [count]);
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
   return (
-    <div>
-      <h1>COUNT :{count} </h1>
-      <button onClick={handleCounter}>ADD</button>
+    <div className="p-5">
+      <h1>Count:{state.count}</h1>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      <button onClick={() => dispatch({ type: "double" })}>*</button>
     </div>
   );
 };
